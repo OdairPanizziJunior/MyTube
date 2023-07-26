@@ -11,66 +11,87 @@
     <header>
         <nav class="navbar fixed-top" data-bs-theme="dark"><!--bg-body-tertiary-->
             <div class="container-fluid">
-
-                <!--Logo do Site-->
-                <a class="navbar-brand" href="#"><img class="logo-navbar" src="images/logo-site.png" alt=""></a>
+                <div>
+                    <!--Menu Sanduíche-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--Logo do Site-->
+                    <a class="navbar-brand" href="#"><img class="logo-navbar" src="images/logo-site.png" alt=""></a>
+                </div>
 
                 <!--Formulário e Botão Search-->
-                <form class="d-flex mt-3" role="search">
+                <form class="d-flex mt-0 item-search" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
 
-                <!--Menu Sanduíche-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <!--offcanvas-start para lado direito e END para esquerdo-->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MyTube</h5>
+                    </div>
 
-                    
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MyTube</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <!--Conteúdo do Offcanvas-->
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                    </ul>
-                    
-                </div>
+                    </div>
                 </div>
             </div>
         </nav>
-
-
-
-
-        
     </header>
     <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptate, repellat amet accusamus quisquam porro ex similique eius! Dolor minima laborum hic debitis facere culpa! Labore cupiditate repellendus iste molestiae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora iusto repellat velit facilis, dolores, odio nobis, laborum unde suscipit molestiae illo qui! Assumenda esse delectus excepturi similique nostrum, magnam quia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim obcaecati animi doloribus corporis numquam, quae expedita nostrum saepe eius ipsa excepturi qui voluptas! Fugiat quam excepturi ab expedita iure consectetur! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium nostrum in, unde, neque repudiandae optio, commodi natus exercitationem doloribus recusandae incidunt ipsa saepe maiores velit sed ex beatae illo ullam!</p>
+       <!--
+        <div class="container text-center">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="col">
+                    <video src="video/vid-001.mp4" poster="images/vid-001.png" controls></video>
+                    Agora Piorou
+                </div>
+              <div class="col">
+                    <video src="video/vid-002.mp4" poster="images/vid-002.png" controls></video>
+                    Bem Loko
+              </div>
+              <div class="col">Column</div>
+              <div class="col">Column</div>
+            </div>
+          </div>
+        -->
+
+        <div>
+            <video src="video/vid-001.mp4" poster="images/vid-001.png" controls></video>
+        </div>
+        
     </main>
 
 
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    
+ 
+
+      
+      </body>
+      <script src="js/bootstrap.bundle.min.js"></script>
+    
 </body>
 </html>

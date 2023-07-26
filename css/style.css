@@ -21,13 +21,34 @@ body {
 
 .logo-navbar{
     width: 120px;
+    margin-left: 10px;
+}
+
+.navbar{
+    background-color: var(--color1);
 }
 
 main{
     padding: 20px;
-    margin-top: 100px;
+    margin-top: 60px;
+    text-align: justify;
 }
 
-.custom-offcanvas{
-    width: 200px;
+
+video{
+    width: 300px; /* Defina a largura desejada */
+    height: 300px;
+}
+
+
+@media screen and (max-width: 512px){
+
+    .item-search{
+        padding-top: 10px;
+    }
+
+    main{
+        margin-top: 110px;
+    }
+
 }
