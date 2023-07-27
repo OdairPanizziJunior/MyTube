@@ -21,7 +21,6 @@ body {
     padding: 0;
 }
     
-
 .logo-navbar{
     width: 120px;
     margin-left: 10px;
@@ -38,8 +37,6 @@ main{
 }
 
 /*CSS NOVO*/
-
-
 .main-video video{
     width: 100%; /* Defina a largura desejada, por exemplo, 90% do contêiner */
     height: 50vh;
