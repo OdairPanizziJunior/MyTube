@@ -62,35 +62,50 @@
         </nav>
     </header>
     <main>
-        <div class="container">
+        <div id="start" class="container">
             <div class="main-video">
                 <p>Current playing</p>
-                <video src="video/vid-001.mp4" controls></video>
-                <figure>
-                    <figcaption>teste</figcaption>
-                </figure>
-            </div>
+                <video id="mainVideo" src="video/vid-001.mp4" controls>               </video>
+             </div>
             <div class="right-column">
                 <p>Select Vídeo to play</p>
                 <section class="videos">
-                    <video src="video/vid-002.mp4" controls></video>
-                    <video src="video/vid-003.mp4" controls></video>
-                    <!-- Outros vídeos aqui -->
-                    <video src="video/vid-002.mp4" controls></video>
-                    <video src="video/vid-003.mp4" controls></video>
-                    <!-- Outros vídeos aqui -->
-                    <video src="video/vid-002.mp4" controls></video>
-                    <video src="video/vid-003.mp4" controls></video>
-                    <!-- Outros vídeos aqui -->
-                    <video src="video/vid-002.mp4" controls></video>
-                    <video src="video/vid-003.mp4" controls></video>
-                    <!-- Outros vídeos aqui -->
+                    <a href="#start">
+                        <video src="video/vid-001.mp4" onclick="playVideo(this.src)"></video>
+                    </a>
+                    <a href="#start">
+                        <video src="video/vid-002.mp4" onclick="playVideo(this.src)"></video>
+                    </a>
+                    <a href="#start">
+                        <video src="video/vid-003.mp4" onclick="playVideo(this.src)"></video>
+                    </a>
+                    <a href="#start">
+                        <video src="video/vid-004.mp4" onclick="playVideo(this.src)"></video>
+                    </a>
+                    <a href="#start">
+                        <video src="video/vid-005.mp4" onclick="playVideo(this.src)"></video>
+                    </a>
+                    <a href="#start">
+                        <video src="video/vid-006.mp4" onclick="playVideo(this.src)"></video>
+                    </a>
+                    <a href="#start">
+                        <video src="video/vid-007.mp4" onclick="playVideo(this.src)"></video>
+                    </a>
+                    <a href="#start">
+                        <video src="video/vid-008.mp4" onclick="playVideo(this.src)"></video>
+                    </a>
+                    <a href="#start">
+                        <video src="video/vid-009.mp4" onclick="playVideo(this.src)"></video>
+                    </a>
+                    <a href="#start">
+                        <video src="video/vid-010.mp4" onclick="playVideo(this.src)"></video>
+                    </a>
                 </section>
             </div>
         </div>
     </main>
 </body>
       <script src="js/bootstrap.bundle.min.js"></script>
-    
+    <script src="js/script.js"></script>
 </body>
 </html>
