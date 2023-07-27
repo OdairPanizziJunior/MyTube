@@ -26,7 +26,7 @@
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MyTube</h5>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="logo-navbar" src="images/logo-site.png" alt="logo"></h5>
                     </div>
                     
                     <!--Conteúdo do Offcanvas-->
@@ -42,26 +42,18 @@
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Contact</a>                             
                                 <ul class="dropdown-menu">
-                                    <li><a href="https://api.whatsapp.com/send?phone=5554992491991" target="_blank" rel="external"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
-                                    <li>
-                                        <span><i class="fa fa-whatsapp" aria-hidden="true"></i></span>
-                                        <p><a href="+353 83 201 1839">+353 83 201 1839</a><br><a href="+55 54 9 9249 1991">+55 54 9 9249 1991</a></p>
-                                    </li>
-                                    <li>
-                                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                                        <p><a href="mailto:odairpanizzijunior@gmail.com">odairpanizzijunior@gmail.com</a></p>
-                                    </li>
-                                <li>
+                                    <li class="dropdown-item flex">
                                     <span><i class="fa fa-whatsapp" aria-hidden="true"></i></span>
-                                    <p><a href="+353 83 201 1839">+353 83 201 1839</a><br><a href="+55 54 9 9249 1991">+55 54 9 9249 1991</a></p>
-                                </li>
-
-                                <li><a class="dropdown-item" href="#end-page">Whatsapp</a></li>
-                                <li><a class="dropdown-item" href="#">E-mail</a></li>
-                                <li>
+                                    <a class="dropdown-item up-text" href="https://api.whatsapp.com/send?phone=5554992491991" target="_blank">Whatsapp</a>
+                                    </li>
+                                    <li class="dropdown-item flex">
+                                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                    <a class="dropdown-item up-text" href="mailto:odairpanizzijunior@gmail.com">E-mail</a>
+                                    </li>
+                                    <li>
                                     <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -116,10 +108,22 @@
             </div>
         </main>
     </section>
+    <footer>
+        <p>This site was created for studying, using examples from YouTube &reg;&trade;</p>
+        <div class="container-footer">
+            <div>
+                <p>1</p>
+            </div>
+            <div>
+                <p>2</p>
+            </div>
+            <div>
+                <a class="developed-by" href="https://odairpanizzijunior.github.io/Personal/" target="_blank">Developed By</a>
+            </div>
+        </div>
+    </footer>  
 </body>
-<footer id="end-page">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tenetur sed voluptas ipsam odio iure magni nesciunt laborum officiis sequi! Aut dolores vel consectetur facere voluptatum facilis distinctio debitis aspernatur.</p>
-</footer>    
+  
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>

@@ -11,6 +11,7 @@
 :root{
     --color1: #0F0F0F;
     --color2: #F1F1F1;
+    --color3: #c4302b;
 }
 
 body {
@@ -51,6 +52,14 @@ main{
     padding: 20px;
 }
 
+.flex{
+    display: flex;
+}
+
+.up-text{
+    margin-top: -5px;
+}
+
 .main-video, .right-column {
     flex: 1; /*ocupar espaço uniforme*/
     min-width: 320px;
@@ -81,6 +90,31 @@ main{
 video {
     border: 1px solid var(--color2);
     border-radius: 5px;
+}
+
+footer p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container-footer{
+    color: var(--color2);
+    background-color: var(--color1);
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.developed-by{
+    text-decoration: none;
+    background-color: var(--color3);
+    border: 1px solid var(--color3);
+    color: var(--color2);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.developed-by:hover{
+    filter: contrast(2);
 }
 
 @media screen and (max-width: 512px){
