@@ -16,8 +16,11 @@
 body {
     font-family: 'Roboto Regular', sans-serif;
     background-color: var(--color1);
-    color: var(--color2)
+    color: var(--color2);
+    margin: 0;
+    padding: 0;
 }
+    
 
 .logo-navbar{
     width: 120px;
@@ -34,10 +37,53 @@ main{
     text-align: justify;
 }
 
+/*CSS NOVO*/
 
-video{
-    width: 300px; /* Defina a largura desejada */
-    height: 300px;
+
+.main-video video{
+    width: 100%; /* Defina a largura desejada, por exemplo, 90% do contêiner */
+    height: 50vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-video, .right-column {
+    flex: 1; /*ocupar espaço uniforme*/
+    min-width: 320px;
+    margin: 10px;
+}
+
+ .videos video{
+    width: 100%;
+    height: 200px; /* Defina a altura fixa desejada */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.right-column, .main-video p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Estilização dos vídeos */
+video {
+    border: 1px solid var(--color2);
+    border-radius: 5px;
 }
 
 
@@ -49,6 +95,24 @@ video{
 
     main{
         margin-top: 110px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .main-video,
+    .right-column {
+        flex: 1;
+        min-width: 100%;
+    }
+
+    .videos {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+
+    .right-column p {
+        font-size: 18px;
     }
 
 }
