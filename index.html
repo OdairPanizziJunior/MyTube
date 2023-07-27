@@ -21,11 +21,6 @@
                     <a class="navbar-brand" href="#"><img class="logo-navbar" src="images/logo-site.png" alt=""></a>
                 </div>
 
-                <!--Formulário e Botão Search-->
-                <form class="d-flex mt-0 item-search" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
 
                 <!--offcanvas-start para lado direito e END para esquerdo-->
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -68,7 +63,7 @@
             <div class="container">
                 <div class="main-video">
                     <p>Current playing</p>
-                    <video id="mainVideo" src="video/vid-001.mp4" controls>               </video>
+                    <video id="mainVideo" src="video/vid-001.mp4" controls></video>
                 </div>
                 <div class="right-column">
                     <p>Select Vídeo to play</p>
@@ -105,6 +100,10 @@
                         </a>
                     </section>
                 </div>
+            </div>
+            <div class="search-container">
+                <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="searchButton" class="btn btn-outline-success" type="button">Search</button>
             </div>
         </main>
     </section>
