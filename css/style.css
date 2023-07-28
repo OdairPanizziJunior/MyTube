@@ -21,7 +21,7 @@ body {
     margin: 0;
     padding: 0;
 }
-    
+
 .logo-navbar{
     width: 120px;
     margin-left: 10px;
@@ -91,23 +91,30 @@ video {
     border: 1px solid var(--color2);
     border-radius: 5px;
 }
+footer{
+    border-top: 5px double var(--color2);
+}
 
 footer p{
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .container-footer{
-    color: var(--color2);
-    background-color: var(--color1);
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .list-icons{
+    list-style: none;
+    padding: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .list-icons li{
@@ -118,14 +125,24 @@ footer p{
 .list-icons li a{
     font-size: 35px;
     color: var(--color2);
-    background-color: var(--color3);
-    border: 1px solid var(--color3);
-    padding: 5px; 
-    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
 }
 
 .list-icons li:hover{
     filter: contrast(2);
+}
+
+/*DIV dos botões*/
+.length-button{
+    background-color: var(--color3);
+    width: 50px;
+    border-radius: 10px;
 }
 
 .developed-by li{
@@ -146,6 +163,51 @@ footer p{
     filter: contrast(2);
 }
 
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh; 
+}
+
+.about img{
+    margin-top: 20px;
+    max-width: 200px; 
+    border-radius: 50%;
+}
+
+.about p{
+    margin-top: 20px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.about-a{
+    text-decoration: none;
+    background-color: var(--color3);
+    color: var(--color2);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.about-a:hover{
+    filter: contrast(2);
+}
+
+.about h1{
+    position: relative;
+}
+
+.about h1::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--color3);
+}
 @media screen and (max-width: 512px){
 
     .item-search{
