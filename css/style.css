@@ -116,8 +116,16 @@ footer p{
 }
 
 .list-icons li a{
-    font-size: 40px;
+    font-size: 35px;
     color: var(--color2);
+    background-color: var(--color3);
+    border: 1px solid var(--color3);
+    padding: 5px; 
+    border-radius: 10px;
+}
+
+.list-icons li:hover{
+    filter: contrast(2);
 }
 
 .developed-by li{
