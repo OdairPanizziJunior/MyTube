@@ -33,7 +33,7 @@ body {
 
 main{
     padding: 20px;
-    margin-top: 60px;
+
     text-align: justify;
 }
 
@@ -103,9 +103,6 @@ main{
 video {
     border: 1px solid var(--color2);
     border-radius: 5px;
-}
-footer{
-    border-top: 5px double var(--color2);
 }
 
 footer p{
@@ -226,10 +223,6 @@ footer p{
 
     .item-search{
         padding-top: 10px;
-    }
-
-    main{
-        margin-top: 80px;
     }
 
     .container {
