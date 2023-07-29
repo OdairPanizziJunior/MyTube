@@ -69,7 +69,8 @@ body {
 }
 
 .container .main-video video{ /*não é a classe e sim a TAG*/
-    width: 100%; /*tamanho da TAG vídeo na classe .main-video */
+    width: 800px; /*tamanho da TAG vídeo na classe .main-video */
+    height: 420px;
     border-radius: 5px;
 }
 
@@ -102,7 +103,8 @@ body {
  }  
 
 .container .video-list .vid video{
-    width: 100px; /*tamanho dos vídeos na lista quadradinhos*/
+    width: 100px;
+    height: 100px; /*tamanho dos vídeos na lista quadradinhos*/
     border-radius: 5px;
 }
 
@@ -257,11 +259,23 @@ footer p{
         grid-template-columns: 1.5fr 1fr;
         padding: 10px;
     }
+
+    .container .main-video video{ /*não é a classe e sim a TAG*/
+        width: 350px; /*tamanho da TAG vídeo na classe .main-video */
+        height: 255px;
+        border-radius: 5px;
+    }
 }
 
 @media (max-width:768px){ /*quando for menor do que 768 vai fiar em uma coluna*/
     .container{
         grid-template-columns: 1fr;
         padding: 10px;
+    }
+
+    .container .main-video video{ /*não é a classe e sim a TAG*/
+        width: 350px; /*tamanho da TAG vídeo na classe .main-video */
+        height: 255px;
+        border-radius: 5px;
     }
 }
