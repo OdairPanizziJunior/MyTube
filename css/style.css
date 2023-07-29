@@ -20,6 +20,7 @@ body {
     color: var(--color2);
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /*PARTE NAVBAR*/
@@ -31,80 +32,94 @@ body {
 .navbar{
     background-color: var(--color1);
 }
+/*====================================*/
 
-main{
-    padding: 20px;
-
-    text-align: justify;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.flex{ /*MENU DROPDOWN*/
+/*MENU DROPDOWN*/
+.flex{ 
     display: flex;
 }
 
 .up-text{
     margin-top: -4px;
 }
+/*====================================*/
 
-/*CSS VIDEO*/
-/* Estilização dos vídeos */
-video {
-    border: 1px solid var(--color2);
-    border-radius: 5px;
-}
+/*CONTEÚDO DO SITE*/
 
-.main-video video{
-    width: 100%; /* Defina a largura desejada, por exemplo, 90% do contêiner */
-    height: 50vh;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
-.main-video, .right-column {
-    flex: 1; /*ocupar espaço uniforme*/
-    min-width: 320px;
-    margin: 10px;
-}
-
-.videos video{
-    width: 100%;
-    height: 200px; /* Defina a altura fixa desejada */
-    border: 1px solid var(--color2);
-    border-radius: 5px;
-}
-
-.videos { /*repetição das colunas e gap entre vídeos*/
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 0px 4px;
-}
-
-.videos a{ /*espaçamento entre vídeos vertical*/
-    margin-bottom: -4px;
-}
-
-.right-column {
-    overflow-y: auto;
-    max-height: calc(100vh - 60px);
-    margin-bottom: 50px;
-  }
-
-.right-column, .main-video p {
+.heading{ /*Título do Site Welcome.......*/
+    color: var(--color2);
+    font-size: 40px;
     text-align: center;
-    font-size: 20px;
-    font-weight: bold;
+    padding: 10px;
+    margin-top: 70px;
 }
 
+.container{ /*principal container com todos os vídeos*/
+    display: grid;
+    grid-template-columns: 2fr 1fr; /*divide duas columns sendo a primeira com duas frações e a segunda com uma*/
+    gap: 15px;
+    align-items: flex-start;
+    padding: 5px 5%;
+}
+
+.container .main-video{ /*ajuste das bordas do vídeo maior*/
+    background: var(--color2); /*espaço onde terá o título*/
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container .main-video video{ /*não é a classe e sim a TAG*/
+    width: 100%; /*tamanho da TAG vídeo na classe .main-video */
+    border-radius: 5px;
+}
+
+.container .main-video .title{ /*ajuste do título do vídeo*/
+    color: var(--color3);
+    font-size: 23px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.container .video-list{/*coluna com os vídeos*/
+    background-color: var(--color2); /*cor da lista*/
+    border-radius: 5px;
+    height: 513px; /*era 520*/
+    overflow-y: scroll; /*define scroll*/
+}
+
+.container .video-list::-webkit-scrollbar{
+    width: 7px;
+}   
+
+.container .video-list::-webkit-scrollbar-track{
+   background: var(--color1); /*cor de fundo do scrool*/
+   border-radius: 50px;
+}   
+
+.container .video-list::-webkit-scrollbar-thumb{
+    background: var(--color2); /*cor do scrool*/
+    border-radius: 50px;
+ }  
+
+.container .video-list .vid video{
+    width: 100px; /*tamanho dos vídeos na lista quadradinhos*/
+    border-radius: 5px;
+}
+
+.container .video-list .vid{ /*ajuste do layout da lista*/
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--color1); /*bloco do vídeo*/
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+/*====================================*/
+
+/*FOOTER*/
 footer p{
     text-align: center;
     margin-bottom: 20px;
@@ -118,7 +133,6 @@ footer p{
     flex-wrap: wrap;
 }
 
-/*ÍCONES DO FOOTER*/
 .list-icons{
     list-style: none;
     padding: 0;
@@ -220,36 +234,4 @@ footer p{
     width: 50px;
     height: 2px;
     background-color: var(--color3);
-}
-
-@media screen and (max-width: 512px){
-
-    .item-search{
-        padding-top: 10px;
-    }
-
-    .container {
-        padding: 10px;
-    }
-
-    .main-video video{
-        position: static; 
-        padding: 0; 
-    }
-    
-
-    .main-video,
-    .right-column {
-        flex: 1;
-        min-width: 100%;
-    }
-
-    .videos {
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-    }
-
-    .right-column p {
-        font-size: 18px;
-    }
-
 }
