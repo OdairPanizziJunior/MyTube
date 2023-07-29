@@ -41,6 +41,10 @@ main{
 .main-video video{
     width: 100%; /* Defina a largura desejada, por exemplo, 90% do contêiner */
     height: 50vh;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .container {
@@ -65,6 +69,11 @@ main{
     min-width: 320px;
     margin: 10px;
 }
+
+.right-column {
+    overflow-y: auto;
+    max-height: calc(100vh - 60px);
+  }
 
  .videos video{
     width: 100%;
@@ -120,6 +129,7 @@ footer p{
 .list-icons li{
     list-style: none;
     margin-right: 5px;
+    align-items: center;
 }
 
 .list-icons li a{
@@ -188,7 +198,7 @@ footer p{
     background-color: var(--color3);
     color: var(--color2);
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 .about-a:hover{
@@ -221,6 +231,12 @@ footer p{
     .container {
         padding: 10px;
     }
+
+    .main-video video{
+        position: static; 
+        padding: 0; 
+    }
+    
 
     .main-video,
     .right-column {
