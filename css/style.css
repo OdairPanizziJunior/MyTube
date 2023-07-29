@@ -12,6 +12,7 @@
     --color1: #0F0F0F;
     --color2: #F1F1F1;
     --color3: #c4302b;
+    --color4: #ffffff7c;
 }
 
 body {
@@ -70,12 +71,12 @@ body {
 
 .container .main-video video{ /*não é a classe e sim a TAG*/
     width: 800px; /*tamanho da TAG vídeo na classe .main-video */
-    height: 420px;
+    height: 407px;
     border-radius: 5px;
 }
 
 .container .main-video .title{ /*ajuste do título do vídeo*/
-    color: var(--color3);
+    color: var(--color1);
     font-size: 23px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -84,7 +85,7 @@ body {
 .container .video-list{/*coluna com os vídeos*/
     background-color: var(--color2); /*cor da lista*/
     border-radius: 5px;
-    height: 513px; /*era 520*/
+    height: 500px; /*era 520*/
     overflow-y: scroll; /*define scroll*/
 }
 
@@ -98,7 +99,7 @@ body {
 }   
 
 .container .video-list::-webkit-scrollbar-thumb{
-    background: var(--color2); /*cor do scrool*/
+    background: var(--color4); /*cor do scrool*/
     border-radius: 50px;
  }  
 
@@ -115,24 +116,27 @@ body {
     background: var(--color1); /*bloco do vídeo*/
     border-radius: 5px;
     margin: 10px;
-    padding: 10px;
-    border: 1px solid purple; /*borda de cada bloquinho*/
+    padding: 5px;
+    border: 1px solid var(--color1); /*borda de cada bloquinho*/
 }
 
 .container .video-list .vid:hover{
-    background: #F1F1F1;
+    cursor: pointer;
+    background: var(--color3);
 }
 
-.container .video-list .vid.active{ /*vídeo clicado*/
-    background: blue;
+.container .video-list .vid.active { /*vídeo clicado*/
+    cursor: pointer;
+    background: var(--color3);
 }
 
 .container .video-list .vid.active .title{ /*as classes .vid.active precisam estar sem espaço*/
+    cursor: pointer;
     color: var(--color2);
 }
 
 .container .video-list .vid .title{
-    color: var(--color3);
+    color: var(--color2);
     font-size: 17px;
 }
 /*====================================*/
