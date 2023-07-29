@@ -73,6 +73,7 @@ main{
 .right-column {
     overflow-y: auto;
     max-height: calc(100vh - 60px);
+    margin-bottom: 50px;
   }
 
  .videos video{
@@ -80,13 +81,16 @@ main{
     height: 200px; /* Defina a altura fixa desejada */
     border: 1px solid var(--color2);
     border-radius: 5px;
-    
 }
 
-.videos {
+.videos { /*repetição das colunas e gap entre vídeos*/
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
+    gap: 0px 4px;
+}
+
+.videos a{ /*espaçamento entre vídeos vertical*/
+    margin-bottom: -4px;
 }
 
 .right-column, .main-video p {
