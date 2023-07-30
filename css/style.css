@@ -67,12 +67,14 @@ body {
     background: var(--color2); /*espaço onde terá o título*/
     border-radius: 5px;
     padding: 10px;
+    
 }
 
 .container .main-video video{ /*não é a classe e sim a TAG*/  
     border-radius: 5px;
-    width: 90%; /* Largura ocupando 100% do contêiner pai */
+    width: 100%; /* Largura ocupando 100% do contêiner pai */
     height: 300px;
+    margin: 0 auto;
 }
 
 .container .main-video .title{ /*ajuste do título do vídeo*/
@@ -265,7 +267,7 @@ footer p{
     }
 
     .container .main-video video{ /*não é a classe e sim a TAG*/
-        width: 350px; /*tamanho da TAG vídeo na classe .main-video */
+        /* width: 350px; tamanho da TAG vídeo na classe .main-video */
         height: 255px;
         border-radius: 5px;
     }
@@ -278,7 +280,7 @@ footer p{
     }
 
     .container .main-video video{ /*não é a classe e sim a TAG*/
-        width: 350px; /*tamanho da TAG vídeo na classe .main-video */
+        /* width: 350px; tamanho da TAG vídeo na classe .main-video */
         height: 255px;
         border-radius: 5px;
     }
