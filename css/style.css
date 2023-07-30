@@ -78,7 +78,8 @@ body {
         height: auto;
         border-radius: 5px;
       
-      
+        width: 100%; /* Largura ocupando 100% do contêiner pai */
+        height: auto;
 
 }
 
