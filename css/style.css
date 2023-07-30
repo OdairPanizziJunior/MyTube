@@ -70,9 +70,16 @@ body {
 }
 
 .container .main-video video{ /*não é a classe e sim a TAG*/
-    width: 800px; /*tamanho da TAG vídeo na classe .main-video */
+    /* width: 800px; tamanho da TAG vídeo na classe .main-video
     height: 407px;
-    border-radius: 5px;
+    border-radius: 5px; */
+  
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      
+      
+
 }
 
 .container .main-video .title{ /*ajuste do título do vídeo*/
